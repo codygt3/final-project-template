@@ -6,3 +6,30 @@ body {
    
 }
 
+#jumpscare {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    display: none;
+}
+
+#jumpscare.show {
+    animation-name: jumpscare;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes jumpscare{
+    0% {
+        scale: 0%;
+    }
+    30% {
+        scale: 200%;
+    }
+    100% {
+        scale: 0%;
+    }
+}
